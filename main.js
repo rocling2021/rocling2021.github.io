@@ -25,12 +25,12 @@ window.onload = function(){
 	// }
 
 
-	var fuck = new Boolean(false);
+	// var fuck = new Boolean(false);
 
-	if(~fuck){
-		fuck = Boolean(true)
-		document.getElementById("test1").innerHTML = fuck;
-	}
+	// if(~fuck){
+	// 	fuck = Boolean(true)
+	// 	document.getElementById("test1").innerHTML = fuck;
+	// }
 
 	// document.getElementById("test1").innerHTML = ;
 }
