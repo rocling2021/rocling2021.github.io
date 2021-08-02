@@ -1135,13 +1135,12 @@
     margin:auto;
     margin-left: 40px;
     font-size: var(--p_size);
-    /* font-family: var(--content_face); */
     width: 100%;
 }
 
-/* .organization .flex .flex_center .wrap #MOE{
-
-} */
+.organization .flex .flex_center .wrap #ESUN{
+    height:80px;
+}
 
 @media(max-width: 1250px){
 
@@ -1176,6 +1175,10 @@
     }
 
     .organization #MST{
+        width:100%;
+        height: auto;
+    }
+    .organization #ESUN{
         width:100%;
     }
 }
