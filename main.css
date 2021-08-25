@@ -452,43 +452,41 @@
     display: flex;
     flex-direction:row;
     justify-content:space-around;
+    width: 100%; 
     margin: 20px auto;
 }
 
-.paper .table_div_mid .table_flex{
-    width:100%;  
+.paper .table_div_mid table{
+    width: var(--content_width);
 }
 
-.paper .table_div_mid .table_flex .paper_table ul{
-    list-style:disc;
-    text-align:left;
-    padding-left:15px;
-    line-height:24px;
-}
-
-.paper .table_div_mid .table_flex .paper_table th {
+.paper .table_div_mid th {
     text-align: center;
     border: 3px solid black;
-    padding-left:15px;
-    line-height: 24px;
+    font-size: var(--p_size);
+    font-family: var(--content_face);
+    line-height: var(--p_line-height);
 }
 
-.paper .table_div_mid .table_flex .paper_table tr {
+.paper .table_div_mid tr{
     border: 3px solid black;
-    padding-left:15px;
-    line-height: 24px;
+    padding-top: 0;
+    padding-right: 5px;
 }
 
-.paper .table_div_mid .table_flex .paper_table td {
+.paper .table_div_mid td{
     border: 3px solid black;
-    padding-left:15px;
+    padding-right: 5px;
     line-height: 24px;
-    word-break: break-all;
+    font-size: var(--p_size);
+    font-family: var(--content_face);
+    line-height: var(--p_line-height);
+    text-align:left;
+    vertical-align:text-top;
 }
 
-.paper .table_div_mid .table_flex .paper_table .ul_div{
-    margin:20px;
-}
+
+
 
 .paper .introduce_div_after{
     display: flex;
@@ -510,6 +508,26 @@
     line-height: var(--p_line-height);
 }
 
+@media(min-width: 1050px) {
+    #paper-table-1{
+        display: block;
+    }
+    #paper-table-2{
+        display: none;
+    }
+
+}
+
+@media(max-width: 1050px) {
+    #paper-table-1{
+        display: none;
+    }
+    #paper-table-2{
+        display: block;
+    }
+
+}
+
 @media(max-width: 768px) {
     .paper{
         background-color: var(--bg1);
@@ -523,6 +541,10 @@
     .paper .introduce_div_before .introduce_div{
         width:100%;
         margin:10px;
+    }
+
+    .paper .table_div_mid table{
+        width: 100%;
     }
 
     .paper .introduce_div_after .introduce_div{
@@ -555,6 +577,19 @@
     width: var(--content_width);
     margin: auto;
     padding-bottom: 40px;
+}
+
+.registration table{
+    background-color: #fff;
+    border:3px #cccccc solid;
+    width: 100%;
+}
+
+.registration th,.registration td{
+    border:1px #cccccc solid;
+    text-align : center;
+    font-size: var(--p_size);
+    font-family: var(--content_face);
 }
 
 .registration .part h2{
@@ -599,10 +634,45 @@
     padding-left: 40px;
 }
 
+@media(min-width: 936px) {
+    #reg-table-1{
+        display: block;
+    }
+    #reg-table-2{
+        display: none;
+    }
+
+}
+
+@media(max-width: 936px) {
+    #reg-table-1{
+        display: none;
+    }
+    #reg-table-2{
+        display: block;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .registration{
+        background-color: var(--bg2);
+        display: flex;
+        flex-direction:column;
+        justify-content:space-around;
+        width: 100%;
+        margin:auto;
+    }
+
+    .registration  #reg-table-2{
+        width: auto;
+    }
+
+}
 /* ==================================================== */
 
 .keynote{
-    background-color: var(--bg2);
+    background-color: var(--bg1);
     width: var(--large_width);
     margin:auto;
 }
@@ -726,7 +796,7 @@
 @media(max-width: 768px) {
 
     .keynote{
-        background-color: var(--bg2);
+        background-color: var(--bg1);
         width: 100%;
         margin:auto;
     }
@@ -735,7 +805,7 @@
 /* ==================================================== */
 
 .special_session{
-    background-color: var(--bg1);
+    background-color: var(--bg2);
     display: flex;
     flex-direction:column;
     justify-content:center;
@@ -842,8 +912,7 @@
 @media(max-width: 768px) {
 
     .special_session{
-        background-color: var(--bg1);
-        /* border-bottom: 1px solid black; */
+        background-color: var(--bg2);
         display: flex;
         flex-direction:column;
         justify-content:center;
@@ -868,7 +937,7 @@
 /* ==================================================== */
 
 .sharetask{
-    background-color: var(--bg2);
+    background-color: var(--bg1);
     width: var(--large_width);
     margin:auto;
 }
@@ -1102,7 +1171,7 @@
 /* ==================================================== */
 
 .organization{
-    background-color: var(--bg1);
+    background-color: var(--bg2);
     width: var(--large_width);
     margin:auto;
 }
@@ -1233,7 +1302,7 @@
 @media(max-width: 768px) {
 
     .organization{
-        background-color: var(--bg1);
+        background-color: var(--bg2);
         width: 100%;
         margin:auto;
     }
