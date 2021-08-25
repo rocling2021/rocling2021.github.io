@@ -452,12 +452,12 @@
     display: flex;
     flex-direction:row;
     justify-content:space-around;
-    width: 100%; 
+    width: var(--content_width);
     margin: 20px auto;
 }
 
 .paper .table_div_mid table{
-    width: var(--content_width);
+    width: auto;
 }
 
 .paper .table_div_mid th {
@@ -484,9 +484,6 @@
     text-align:left;
     vertical-align:text-top;
 }
-
-
-
 
 .paper .introduce_div_after{
     display: flex;
