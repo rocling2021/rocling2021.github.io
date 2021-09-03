@@ -498,6 +498,15 @@
     text-align: justify;
 }
 
+.paper h2{
+    text-align: left;
+    font-family: var(--title_face);
+    font-size: var(--h2_size);
+    font-weight:bold;
+    width: auto;
+    margin-bottom: 20px;
+}
+
 .paper p{
     margin: 10px;
     font-size: var(--p_size);
