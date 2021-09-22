@@ -561,8 +561,111 @@
 
 /* ==================================================== */
 
-.registration{
+.programs{
     background-color: var(--bg2);
+    width: var(--large_width);
+    margin:auto;
+}
+
+.programs h1{
+    text-align: center;
+    font-size: var(--h1_size);
+    font-family: var(--title_face);
+    padding: 40px 0;
+    margin: auto;
+    width: auto;
+}
+
+.programs .part{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    width: var(--content_width);
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.programs table{
+    background-color: #fff;
+    border:3px #cccccc solid;
+    width: 100%;
+}
+
+.programs th,.programs td{
+    border:1px #cccccc solid;
+    text-align : center;
+    font-size: var(--p_size);
+    font-family: var(--content_face);
+}
+
+.programs .part h2{
+    text-align: left;
+    font-family: var(--title_face);
+    font-size: var(--h2_size);
+    font-weight:bold;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.programs .part h3{
+    text-align: center;
+    font-family: var(--title_face);
+    font-size: var(--h2_size);
+    font-weight:normal;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.programs .part #session-top{
+    text-align: center;
+    font-family: var(--title_face);
+    font-size: var(--h2_size);
+    font-weight:normal;
+    width: auto;
+    margin-bottom: 20px;
+    padding-top:40px; 
+    border-top: 1px solid black;
+}
+
+.programs .part h4{
+    text-align: left;
+    font-family: var(--title_face);
+    font-size: var(--h2_size);
+    font-weight:normal;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.programs .part p{
+    text-align: left;
+    margin: auto;
+    font-size: var(--p_size);
+    font-family: var(--content_face);
+    width: 100%;
+    line-height: var(--p_line-height);
+}
+
+.programs .part .session-item{
+    margin-bottom: 20px;
+}
+
+@media(max-width: 768px) {
+    .programs{
+        background-color: var(--bg2);
+        display: flex;
+        flex-direction:column;
+        justify-content:space-around;
+        width: 100%;
+        margin:auto;
+    }
+
+}
+
+
+/* ==================================================== */
+
+.registration{
+    background-color: var(--bg1);
     width: var(--large_width);
     margin:auto;
 }
@@ -662,7 +765,7 @@
 
 @media(max-width: 768px) {
     .registration{
-        background-color: var(--bg2);
+        background-color: var(--bg1);
         display: flex;
         flex-direction:column;
         justify-content:space-around;
@@ -678,7 +781,7 @@
 /* ==================================================== */
 
 .keynote{
-    background-color: var(--bg1);
+    background-color: var(--bg2);
     width: var(--large_width);
     margin:auto;
 }
@@ -802,6 +905,149 @@
 @media(max-width: 768px) {
 
     .keynote{
+        background-color: var(--bg2);
+        width: 100%;
+        margin:auto;
+    }
+}
+
+/* ==================================================== */
+
+.Tutorials{
+    background-color: var(--bg1);
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    width: var(--large_width);
+    margin:auto;
+}
+
+.Tutorials h1{
+    text-align: center;
+    font-size: var(--h1_size);
+    font-family: var(--title_face);
+    padding: 40px 0;
+    margin: auto;
+    width: auto;
+}
+
+.Tutorials .part{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    width: var(--content_width);
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+.Tutorials table{
+    /* background-color: #fff; */
+    border:3px #000000 solid;
+    width: 100%;
+}
+
+.Tutorials th,.Tutorials td{
+    border:1px #000000 solid;
+    text-align : center;
+    font-size: var(--p_size);
+    font-family: var(--content_face);
+}
+
+
+
+.Tutorials .part h2{
+    text-align: center;
+    font-family: var(--title_face);
+    font-size: var(--h2_size);
+    font-weight:bold;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.Tutorials .part #AIT{
+    padding-top:40px; 
+    border-top: 1px solid black;
+}
+
+.Tutorials .part h3{
+    text-align: center;
+    font-family: var(--title_face);
+    font-size: var(--h2_size);
+    /* font-weight:bold; */
+    font-weight:normal;
+    width: auto;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+.Tutorials .part h4{
+    text-align: center;
+    font-family: var(--title_face);
+    font-size: 30px;
+    font-weight:bold;
+    width: auto;
+    margin:auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.Tutorials .part .list{
+    padding-left: 40px;
+}
+
+.Tutorials .part .list ol{  
+    padding-left:15px;
+    font-size: 20px; 
+}
+
+.Tutorials .part .list ul{  
+    padding-left:15px;
+    font-size: 20px; 
+}
+
+.Tutorials .part .list li{
+    padding: 5px 0;
+    font-size: var(--p_size);
+    font-family: var(--content_face);
+}
+
+.Tutorials .part p{
+    text-align: justify;
+    margin: auto;
+    margin-bottom:20px;
+    font-size: var(--p_size);
+    font-family: var(--content_face);
+    width: 100%;
+    line-height: var(--p_line-height);
+}
+
+.Tutorials .part .AI3{
+    margin-top: 20px;
+}
+
+@media(min-width: 1326px){
+    #AI3-1{
+        display: block;
+    }
+
+    #AI3-2{
+        display: none;
+    }
+}
+
+@media(max-width: 1326px){
+    #AI3-1{
+        display: none;
+    }
+
+    #AI3-2{
+        display: block;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .Tutorials{
         background-color: var(--bg1);
         width: 100%;
         margin:auto;
