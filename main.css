@@ -1486,7 +1486,7 @@
     border-radius:50%;
 }
 
-.organization .flex .wrap .item .people{
+.organization .flex .item .people{
     margin: auto 0;
     margin-left: 40px;
     text-align: left;
@@ -1527,6 +1527,97 @@
     height:80px;
 }
 
+.organization #PT{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    width:auto;
+    margin :auto;
+    padding-bottom: 20px;
+}
+
+.organization #program_title{
+    font-size: 40px;
+    border-bottom: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.organization #program_title_note{
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    margin:auto;
+    text-align: center;
+    margin-bottom: 20px;
+    padding : 25px 0 ;
+    width: 90%;
+}
+
+.organization .flex .flex_program{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    width:auto;
+    margin:auto 10px;
+    margin-top:0;
+}
+
+.organization .flex .flex_program .item{
+    width:auto;
+}
+
+.organization .flex .flex_program .item .people{
+    margin: auto;
+    width: auto;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.organization .flex .flex_program .item .people h3{
+    /* margin: auto 0;
+    margin-left: 40px; */
+    text-align: left;
+}
+
+@media(max-width: 1630px) {
+    .organization #flex-pc{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        width:40%;
+        margin: 0 auto ;
+        padding-bottom: 20px;
+    }
+    
+    .organization .flex .flex_program{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        width:auto;
+        margin:auto;
+        margin-left: 0;
+        
+    }
+
+    .organization .flex .flex_program .item{
+        width:auto;
+    }
+
+    .organization .flex .flex_program .item .people{
+        margin: auto;
+        width: auto;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .organization .flex .flex_program .item .people h3{
+        width: auto;
+        text-align: left;
+    }
+
+
+}
+
 @media(max-width: 1376px){
 
     .organization .flex{
@@ -1546,8 +1637,27 @@
         margin-top:0;
     }
 
-    .organization .flex .flex_center .space{
-        padding: 40px;
+}
+
+@media(max-width: 1376px){
+    .organization #flex-pc{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        width:50%;
+        margin: 0 auto ;
+        padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 1376px){
+    .organization #flex-pc{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        width:60%;
+        margin: 0 auto ;
+        padding-bottom: 20px;
     }
 }
 
