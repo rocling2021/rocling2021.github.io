@@ -1676,6 +1676,16 @@
     .organization #ESUN{
         width:100%;
     }
+
+    .organization #flex-pc{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        width:100%;
+        margin: 0 auto ;
+        padding-bottom: 20px;
+    }
+
 }
 
 
