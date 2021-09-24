@@ -795,58 +795,104 @@
     width: auto;
 }
 
-.keynote .flex{
+.keynote .part{
     display: flex;
     flex-direction:column;
     justify-content:center;
     width: var(--content_width);
-    margin:auto;
+    margin: auto;
     padding-bottom: 40px;
 }
 
-.keynote .flex h2{
-    text-align: center;
-    margin:  auto 20px ;
-    padding-bottom: 5px;
-    font-weight:bold;
-    font-size: 36px;
-    margin-bottom: 10px;
+.keynote .part .introduction{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
-.keynote .flex h3{
-    text-align: center;
-    margin: auto ;
-    padding-bottom: 5px;
-    font-weight:bold;
-    font-size: 20px;
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
-    width: 95%;
-}
-
-.keynote .flex .wrap_text{
+.keynote .part .intro{
     display: flex;
     flex-direction:row;
-    justify-content:center;
-    width: auto;
-    margin-top:20px;
+    justify-content:left;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(0, 0, 0);
 }
 
-.keynote .flex .wrap_pic{
-    width:auto;
-    display:flex;
-    Justify-content:center;
-    Align-items:start;
-    height: 100%;
-}
-
-.keynote .flex .wrap_pic img{
+.keynote .part .intro_img img{
     width: 320px;
     height: 400px;
-    margin:auto;
 }
 
-.keynote .flex .wrap_text p{
+.keynote .part .intro_text{
+
+   display:flex;
+   flex-direction:column;
+   justify-content: space-between;
+   width:auto;
+   height: auto;
+   margin-left: 40px;
+}
+
+.keynote .part h2{
+    text-align: center;
+    font-family: var(--title_face);
+    font-size: 44px;
+    font-weight:bold;
+    width: auto;
+    margin-bottom: 40px;
+ }
+
+ .keynote .part .introduction .intro_text #title{
+    text-align: left;
+    font-family: var(--title_face);
+    font-size: 38px;
+    font-weight:bold;
+    width: auto;
+    margin-bottom: 0px;
+ }
+
+ .keynote .part .introduction .intro_text h3{
+    text-align: left;
+    font-family: var(--title_face);
+    line-height: 60px;
+    font-size: 34px;
+    font-weight:normal;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0px;
+    bottom: 0;
+ }
+
+ .keynote .part .introduction .intro_text h4{
+    text-align: left;
+    font-family: var(--title_face);
+    font-size: var(--h2_size);
+    font-weight:normal;
+    width: auto;
+    margin-bottom: 20px;
+    bottom: 0;
+ }
+
+ .keynote .part .BandA{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-top: 20px 0 ;
+ }
+
+ .keynote .part .BandA h5{
+    text-align: left;
+    font-family: var(--title_face);
+    font-size: var(--h2_size);
+    font-weight:bold;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:20px;
+ }
+
+
+.keynote p{
     text-align: justify;
     margin: auto;
     font-size: var(--p_size);
@@ -857,7 +903,7 @@
 
 @media(max-width: 1132px){
 
-    .keynote .flex{
+    .keynote .part{
         display: flex;
         flex-direction:column;
         justify-content:center;
@@ -865,40 +911,17 @@
         margin:auto;
     }
 
-    .keynote .flex h2{
-        text-align: center;
-        margin: 40px auto ;
-        padding-bottom: 5px;
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-    .keynote .flex h3{
-        text-align: center;
-        margin: auto ;
-        padding-bottom: 5px;
-        font-size: 20px;
-        border-bottom: 1px solid black;
-        margin-bottom: 10px;
-        width: 95%;
-    }
-
-    .keynote .flex .wrap_text{
+    .keynote .part .intro{
         display: flex;
         flex-direction:column;
-        justify-content:center;
-        width: auto;
+        justify-content:left;
+        padding-bottom: 40px;
+        border-bottom: 2px solid rgb(0, 0, 0);
     }
 
-    .keynote .flex .wrap_pic{
-        width:auto;
-        margin:auto;
-        text-align: center;
-    }
-    
-    .keynote .flex .wrap_pic img{
-        width: 320px;
-        height: 400px;
-        margin:20px auto;
+    .keynote .part .intro_img {
+        width: auto;
+        margin :auto;
     }
 }
 
@@ -1650,7 +1673,7 @@
     }
 }
 
-@media(max-width: 1376px){
+@media(max-width: 991px){
     .organization #flex-pc{
         display: flex;
         flex-direction:column;
