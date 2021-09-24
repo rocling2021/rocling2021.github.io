@@ -845,7 +845,7 @@
  .keynote .part .introduction .intro_text #title{
     text-align: left;
     font-family: var(--title_face);
-    font-size: 38px;
+    font-size: 30px;
     font-weight:bold;
     width: auto;
     margin-bottom: 0px;
@@ -855,7 +855,7 @@
     text-align: left;
     font-family: var(--title_face);
     line-height: 60px;
-    font-size: 34px;
+    font-size: 28px;
     font-weight:normal;
     width: auto;
     margin-top: 0;
